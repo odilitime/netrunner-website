@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Netrunner - The Perfect Browser</title>
+    <meta name="description" content="The most flexible web browser that puts developers first">
+    <meta name="keywords" content="viewer,adblock,editor,vim,vi,g">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="icon" type="image/x-icon" href="public/images/icon/moon_man.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="public/images/icon/moon_man.ico">
+
+    <link rel="stylesheet" type="text/css" href="public/css/index.css">
+    <link rel="stylesheet" type="text/css" href="public/css/UberGallery.css">
+    <link rel="stylesheet" type="text/css" href="public/css/colorbox.css">
+
+    <script type="text/javascript" src="public/js/jquery_002.js"></script>
+    <script type="text/javascript" src="public/js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("a[rel='colorbox']").colorbox({maxWidth: "90%", maxHeight: "90%", opacity: ".5"});
+        });
+    </script>
+</head>
+
+<body>
+<topbar>
+    <a href="/">
+        <img class="logoImg" src="public/images/flair/moon_man_small.png">
+        Team Netrunner
+    </a>
+</topbar>
+
+<style>
+   
+</style>
+
+<bglayer style="background-color:#101021"></bglayer>
+<bglayer id="rising_moon_man"></bglayer>
+<bglayer id="ny_skyline"></bglayer>
+
+
+
+<content>
+    <section class="high_profile_sticky">
+        IRC: <a href = "https://qchat.rizon.net/?channels=/g/netrunner">#/g/netrunner @ irc.rizon.net</a>
+    </section>
+
+    <section>
+        <h1>What is Project Netrunner?</h1>
+        <blurb>
+           In the face of recent changes in Firefox, some people were asking for a /g/' perfect web browser. We are developing our own browser named Netrunner, it is designed by /g/ to cater to powerusers and meet the demands of /g/.<br><br>
+            Discussions are at <a href="https://news.ycombinator.com/item?id=15000253">Hacker News</a> and <a href="https://4chan.org/g/netrunner">4Chan /g/</a> 
+        </blurb>
+    </section>
+
+
+    <section>
+        <h1>Basis</h1>
+        <blurb>
+            <ul>
+                <li class="highlight">Local cache</li>
+                <li class="highlight">Non-bloated smooth UI</li>
+                <li class="highlight">Written in C++</li>
+                <li class="highlight">Low on dependencies</li>
+                <li class="highlight">HTTPS with HTTP fallback and ports management like Smart HTTPS and HTTPS by default</li>
+                <li class="highlight">Bookmark management</li>
+                <li class="highlight">Userscript support</li>
+                <li class="highlight">"Open with" feature to use an external application, like for using a video player</li>
+                <li class="highlight">many more.....</li>
+            </ul>
+        </blurb>
+    </section>
+
+
+
+    <section>
+        <h1>Downloads</h1>
+        <blurb>
+            Linux Binary: <a href="https://my.mixtape.moe/xsivqb.tar.gz">Here</a> Aug 29 2017<br>
+            OSX Binary: <a href="https://my.mixtape.moe/katvqh.zip">Here</a> Aug 29 2017<br>
+            Windows Binary <a href="https://nt-build-bot.rvx86.net/job/netrunner-winnt-i686/">Latest 32bit</a> | <a href="https://nt-build-bot.rvx86.net/job/netrunner-winnt-amd64/">Latest 64bit</a>
+        </blurb>
+    </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <blurb>
+            To keep up to date with progress follow us on the following social sites!<br>
+            <a href="https://www.youtube.com/channel/UCes2uiC-4xSBwqnldCFbh4Q" target="_blank">YouTube</a><br>
+            <a href="https://twitter.com/Team_NetRunner" target="_blank">Twitter</a>
+        </blurb>
+    </section>
+
+
+    <section>
+        <h1>Support</h1>
+        <blurb>
+            BTC 1GcRuVej1gfZt8MLoKQqSGBCHMcEWiNzVv<br>
+            ETH 0x91425B56e1A58Cd066cF64568d65A86DdAA304f6<br>  
+            <a href="https://shapeshift.io/shifty.html?destination=1GcRuVej1gfZt8MLoKQqSGBCHMcEWiNzVv&amp;output=BTC">Alt Coin</a><br>
+            <a href="https://patreon.com/odilitime">Patreon</a><br>
+            <a href="https://hatreon.us/odilitime">Hatreon</a><br>
+        </blurb>
+    </section>
+
+
+    <section id="installation">
+        <h1>Installation Prerequisites</h1>
+        <blurb>
+            <h2>Linux</h2>
+            <br>
+            <h3>Debian (and derivates):</h3>
+                <code>sudo apt-get install libfreetype6-dev libharfbuzz-dev libglew-dev libglfw3-dev</code>
+                Also will need either libmbedtls-dev (Debian 9/Ubuntu 16LTS (xenial)) or libpolarssl-dev (Debian 8 or earlier)<br>
+                <br>
+            <h3>Arch (and derivates)</h3>
+                <code>sudo pacman -Suy glew glfw freetype2 harfbuzz</code>
+                <br>
+            <h3>Void</h3>
+                <code>sudo xbps-install -S glew glfw harfbuzz-devel</code>
+                <br>
+            <h3>Gentoo</h3>
+                <code>sudo emerge freetype harfbuzz glew glfw</code>
+                Place binary in /usr/local/bin or add it to PATH with 
+                <code>export PATH="$PATH:/some/addition"</code>
+                Then type in terminal 
+                <code>./netrunner example.com</code>
+                <br>
+            <hr>
+            <br>
+            <h2>Mac OS X</h2>
+                <code>brew install glew glfw freetype harfbuzz mbedtls</code>
+                <br>
+            <hr>
+            <br>
+            <h2>Windows</h2>
+                In the command prompt, cd into the directory netrunner is extracted to then run 
+                <code>netrunner http://example.com/</code>
+                <center><i>OR</i></center>
+                Use the installer (doesn't add netrunner to path yet)
+        </blurb>
+    </section>
+
+
+    <section>
+        <h1>Contributing</h1>
+        <blurb>
+            To contribute, Join us at our <a href="https://discord.gg/wNZER3" target="_blank">Discord Server</a> or <a href="https://qchat.rizon.net/?channels=/g/netrunner">IRC Server</a> and get programming!<br>
+            odilitime - Lead Developer - repo: <a href="https://gitgud.io/odilitime/netrunner/">https://gitgud.io/odilitime/netrunner/</a><br>
+            gyroninja - repo: <a href="https://git.teknik.io/gyroninja/netrunner">https://git.teknik.io/gyroninja/netrunner</a><br>
+            Nubben - repo: <a href="https://github.com/nubben/netrunner/">https://github.com/nubben/netrunner/</a><br>
+            Tomleb - repo: <a href="https://github.com/tomleb/netrunner">https://github.com/tomleb/netrunner</a>
+        </blurb>
+    </section>
+
+    <section>
+        <h1>Screenshots</h1>
+        <blurb>
+        <!-- Start UberGallery 2.4.8 - Copyright (c) 2017 Chris Kankiewicz (http://www.ChrisKankiewicz.com) -->
+            <div id="galleryWrapper">
+                <ul id="galleryList" class="clearfix">
+                    <li>
+                        <a href="https://netrunner.cc/gallery/screenshots/MacOS%20-%20Browser.png" title="MacOS - Browser" rel="colorbox" class="cboxElement">
+                            <img src="public/images/pic/100x100-75-63a17952f323d717c0e352f01f4a2780f178bed160d87c845.png" alt="MacOS - Browser">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://netrunner.cc/gallery/screenshots/win10ntr.png" title="win10ntr" rel="colorbox" class="cboxElement">
+                            <img src="public/images/pic/100x100-75-96e65fc46fd7387a295a9f769a3f355f7d3bdaaaab8cf0c37.png" alt="win10ntr">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://netrunner.cc/gallery/screenshots/windows%20-%20command.png" title="windows - command" rel="colorbox" class="cboxElement">
+                            <img src="public/images/pic/100x100-75-3d66d2622fb011144c722efcbf968bd668872f240842c70fd.png" alt="windows - command">
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- End UberGallery - Distributed under the MIT license: http://www.opensource.org/licenses/mit-license.php -->
+                <div id="galleryFooter" class="clearfix">
+                    <div id="credit">Powered by, <a href="http://www.ubergallery.net/">UberGallery</a></div>
+                </div>
+            </div>
+        </blurb>
+    </section>
+
+
+    <section>
+        <h1>Extras</h1>
+        <blurb>
+            Archived Threads: <a href="https://netrunner.cc/archive/index.html" target="_blank">Here</a><br>
+            Image Gallery: <a href="https://netrunner.cc/gallery/index.php" target="_blank">Here</a>
+        </blurb>
+    </section>
+
+
+</content>
+
+
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div>
+
+
+
+
+</body>
+</html>
