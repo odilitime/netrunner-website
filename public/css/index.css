@@ -49,9 +49,9 @@ body {
             background-repeat: no-repeat;
         }
 
-        #rising_moon_man {
-            background-image: url("../images/flair/moon_man_small.png");
-            /*background-size: 100% auto;*/
+        #rising_logo {
+            background-image: url("../images/flair/neon_sign.png");
+            background-size: auto 50vh ;
             background-position:  center bottom 45vh;
             background-repeat: no-repeat;
         }
