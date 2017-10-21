@@ -1,0 +1,55 @@
+
+html {
+    background-color: black;
+}
+
+
+        #base_color {
+            position: fixed;
+            background-image: url("../../images/bg/stars.png"), radial-gradient(farthest-corner at 20% 80%, #64114c 0%, #1e1444 80%, black 100%);
+
+        }
+
+        #ny_skyline {
+            position: fixed;
+            background-image: url("../../images/bg/ny_skyline_retro.png");
+            background-size: 100% auto;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+        }
+
+        #rising_logo {
+            background-image: url("../../images/flair/abbrev_neon_sign.png");
+            background-position:  center bottom 45vh;
+            background-repeat: no-repeat;
+        }
+
+
+
+    body > topbar {
+        background-color: #111;
+  
+        background-image: url("../../images/bg/glow_grid_white.png");
+        background-size: 20px auto;
+
+        border-color: #f88ebb;
+        box-shadow: 0px 0px 5px #ff026d, inset 0px 0px 5px #ff026d;
+    }
+
+        content > section {
+            border-width: 2px;
+            border-color: #d6fff0;
+            box-shadow: 0px 0px 5px #00ffa4, inset 0px 0px 5px #00ffa4;
+        }
+
+
+            section > h1 {
+                border-color: #d6fff0;
+                box-shadow: 0px 0px 5px #00ffa4, inset 0px 0px 5px #00ffa4;
+            }
+
+          
+
+
+
+
