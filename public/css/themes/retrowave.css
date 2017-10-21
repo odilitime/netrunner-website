@@ -6,7 +6,8 @@ html {
 
         #base_color {
             position: fixed;
-            background-image: url("../../images/bg/stars.png"), radial-gradient(farthest-corner at 20% 80%, #64114c 0%, #1e1444 80%, black 100%);
+            /*background-image: url("../../images/bg/stars.png"), radial-gradient(farthest-corner at 20% 80%, #64114c 0%, #1e1444 80%, black 100%);*/
+            background-image: url("../../images/bg/stars.png"), radial-gradient(farthest-corner at 20% 80%, #64114c 0%, #011d3c 80%, black 100%)
 
         }
 
@@ -40,12 +41,15 @@ html {
             border-width: 2px;
             border-color: #d6fff0;
             box-shadow: 0px 0px 5px #00ffa4, inset 0px 0px 5px #00ffa4;
+            /*box-shadow: 0px 0px 5px #00aeff, inset 0px 0px 5px #00aeff;*/
+            
         }
 
 
             section > h1 {
                 border-color: #d6fff0;
                 box-shadow: 0px 0px 5px #00ffa4, inset 0px 0px 5px #00ffa4;
+                /*box-shadow: 0px 0px 5px #00aeff, inset 0px 0px 5px #00aeff;*/
             }
 
           
